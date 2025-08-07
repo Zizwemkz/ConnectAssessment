@@ -1,0 +1,15 @@
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\bin\Debug\net9.0\ConnectAssessment.Common.deps.json
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\bin\Debug\net9.0\ConnectAssessment.Common.dll
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\bin\Debug\net9.0\ConnectAssessment.Common.pdb
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\bin\Debug\net9.0\ConnectAssessment.Data.dll
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\bin\Debug\net9.0\ConnectAssessment.Data.pdb
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.csproj.AssemblyReference.cache
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.AssemblyInfoInputs.cache
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.AssemblyInfo.cs
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.csproj.CoreCompileInputs.cache
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectA.3078BA52.Up2Date
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.dll
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\refint\ConnectAssessment.Common.dll
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ConnectAssessment.Common.pdb
+C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Common\obj\Debug\net9.0\ref\ConnectAssessment.Common.dll

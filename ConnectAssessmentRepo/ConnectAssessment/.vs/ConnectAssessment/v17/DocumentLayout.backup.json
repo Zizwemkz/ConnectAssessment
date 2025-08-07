@@ -1,0 +1,510 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83D24F45-204B-40D2-B27C-CC74E2A198AA}|..\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D24F45-204B-40D2-B27C-CC74E2A198AA}|..\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.repositories\\settlementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\entities\\tbsettlementtransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\entities\\tbcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\connectassessmentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1260A71-5FA1-488A-9363-F2C983BF425F}|..\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83D24F45-204B-40D2-B27C-CC74E2A198AA}|..\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.repositories\\connectassessment.repositories.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7E2618-61F8-40BB-B020-C9103FA6A626}|..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.service\\bankapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7E2618-61F8-40BB-B020-C9103FA6A626}|..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.service\\palindromeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7E2618-61F8-40BB-B020-C9103FA6A626}|..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.service\\transactionfeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7E2618-61F8-40BB-B020-C9103FA6A626}|..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.service\\customersettlementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\controllers\\customersettlementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:controllers\\customersettlementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\requests\\settlecustomerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\customapihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:customapihealthcheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\controllers\\palindromecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:controllers\\palindromecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\repository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\responses\\settlecustomerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\responses\\palindromeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\models\\requests\\palindromerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\repository\\isettlementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\service\\itransactionfeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\service\\ibankapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\service\\icustomersettlementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B7E2618-61F8-40BB-B020-C9103FA6A626}|..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.service\\connectassessment.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|c:\\dev\\connectassessmentrepo\\connectassessment\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2560AA2D-44E5-4584-B0CD-3DBFACCA5AE0}|ConnectAssessment.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\service\\ipalindromeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{091A3901-BC78-41C7-9B12-581852D1853C}|..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.common\\connectassessment.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F3EBC40-22AA-46CC-AEFF-0554AC882554}|..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj|c:\\dev\\connectassessmentrepo\\connectassessment.data\\connectassessment.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:08:40.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tbSettlementTransaction.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Entities\\tbSettlementTransaction.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Entities\\tbSettlementTransaction.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Entities\\tbSettlementTransaction.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Entities\\tbSettlementTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:13:09.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tbCustomer.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Entities\\tbCustomer.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Entities\\tbCustomer.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Entities\\tbCustomer.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Entities\\tbCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:12:53.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettlementRepository.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\SettlementRepository.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Repositories\\SettlementRepository.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\SettlementRepository.cs*",
+              "RelativeToolTip": "..\\ConnectAssessment.Repositories\\SettlementRepository.cs*",
+              "ViewState": "AgIAABQAAAAAAAAAAAA1wAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:43:57.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConnectAssessmentDbContext.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessmentDbContext.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\ConnectAssessmentDbContext.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessmentDbContext.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\ConnectAssessmentDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:16:17.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:09:47.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConnectAssessment.Repositories",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+              "RelativeToolTip": "..\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-06T18:25:27.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BankApiService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\BankApiService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Service\\BankApiService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\BankApiService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Service\\BankApiService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAArwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:42:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PalindromeService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\PalindromeService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Service\\PalindromeService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\PalindromeService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Service\\PalindromeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:07:42.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TransactionFeeService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\TransactionFeeService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Service\\TransactionFeeService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\TransactionFeeService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Service\\TransactionFeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:43:14.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomerSettlementService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\CustomerSettlementService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Service\\CustomerSettlementService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\CustomerSettlementService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Service\\CustomerSettlementService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:30:55.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerSettlementController.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Controllers\\CustomerSettlementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerSettlementController.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Controllers\\CustomerSettlementController.cs",
+              "RelativeToolTip": "Controllers\\CustomerSettlementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T17:59:50.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SettleCustomerRequest.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Requests\\SettleCustomerRequest.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Requests\\SettleCustomerRequest.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Requests\\SettleCustomerRequest.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Requests\\SettleCustomerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:13:56.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T18:32:29.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBEAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:40:54.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomApiHealthCheck.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\CustomApiHealthCheck.cs",
+              "RelativeDocumentMoniker": "CustomApiHealthCheck.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\CustomApiHealthCheck.cs",
+              "RelativeToolTip": "CustomApiHealthCheck.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wBAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T20:38:39.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PalindromeController.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Controllers\\PalindromeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PalindromeController.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\Controllers\\PalindromeController.cs",
+              "RelativeToolTip": "Controllers\\PalindromeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T17:58:09.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Repository\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Repository\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Repository\\ICustomerRepository.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Repository\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:18:29.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SettleCustomerResponse.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Responses\\SettleCustomerResponse.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Responses\\SettleCustomerResponse.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Responses\\SettleCustomerResponse.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Responses\\SettleCustomerResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:14:30.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PalindromeResponse.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Responses\\PalindromeResponse.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Responses\\PalindromeResponse.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Responses\\PalindromeResponse.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Responses\\PalindromeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:14:14.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PalindromeRequest.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Requests\\PalindromeRequest.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\Models\\Requests\\PalindromeRequest.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\Models\\Requests\\PalindromeRequest.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\Models\\Requests\\PalindromeRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:13:40.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ISettlementRepository.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Repository\\ISettlementRepository.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Repository\\ISettlementRepository.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Repository\\ISettlementRepository.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Repository\\ISettlementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:44:23.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ITransactionFeeService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\ITransactionFeeService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Service\\ITransactionFeeService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\ITransactionFeeService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Service\\ITransactionFeeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:35:01.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IBankApiService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\IBankApiService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Service\\IBankApiService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\IBankApiService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Service\\IBankApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:34:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ConnectAssessment.Service",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+              "RelativeToolTip": "..\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-06T18:42:36.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ICustomerSettlementService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\ICustomerSettlementService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Service\\ICustomerSettlementService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\ICustomerSettlementService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Service\\ICustomerSettlementService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:19:38.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-06T18:32:34.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IPalindromeService.cs",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\IPalindromeService.cs",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\Service\\IPalindromeService.cs",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\Service\\IPalindromeService.cs",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\Service\\IPalindromeService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T18:19:17.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ConnectAssessment.Common",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
+              "RelativeToolTip": "..\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-06T18:18:18.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ConnectAssessment.Data",
+              "DocumentMoniker": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+              "RelativeDocumentMoniker": "..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+              "ToolTip": "C:\\Dev\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+              "RelativeToolTip": "..\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-06T18:11:06.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
