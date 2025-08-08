@@ -25,30 +25,51 @@ public class CustomerSettlementService : ICustomerSettlementService
 
     public async Task<SettleCustomerResponse> SettleCustomerAsync(SettleCustomerRequest request)
     {
-        var customer = await _customerRepo.GetByIdAsync(request.CustomerId);
-        if (customer == null)
-            return new SettleCustomerResponse { Success = false, Message = "tbCustomer not found" };
+        // Validation
+        if (request == null)
+            throw new ArgumentNullException(nameof(request), "Request cannot be null.");
 
-        var fee = _feeService.CalculateFee(request.Amount);
-        var toTransfer = request.Amount - fee;
+        if (request.CustomerId <= 0)
+            return new SettleCustomerResponse { Success = false, Message = "Invalid customer ID." };
 
-        var success = await _bankApi.TransferFundsAsync(customer.AccountNumber, toTransfer);
+        if (request.Amount <= 0)
+            return new SettleCustomerResponse { Success = false, Message = "Amount must be greater than zero." };
 
-        var settlement = new tbSettlementTransaction
+        try
         {
-            CustomerId = customer.Id,
-            Amount = request.Amount,
-            TransactionFee = fee,
-            Date = DateTime.UtcNow,
-            Success = success
-        };
-        await _settlementRepo.AddAsync(settlement);
+            var customer = await _customerRepo.GetByIdAsync(request.CustomerId);
+            if (customer == null)
+                return new SettleCustomerResponse { Success = false, Message = "tbCustomer not found" };
 
-        return new SettleCustomerResponse
+            var fee = _feeService.CalculateFee(request.Amount);
+            var toTransfer = request.Amount - fee;
+
+            var success = await _bankApi.TransferFundsAsync(customer.AccountNumber, toTransfer);
+
+            var settlement = new tbSettlementTransaction
+            {
+                CustomerId = customer.Id,
+                Amount = request.Amount,
+                TransactionFee = fee,
+                Date = DateTime.UtcNow,
+                Success = success
+            };
+            await _settlementRepo.AddAsync(settlement);
+
+            return new SettleCustomerResponse
+            {
+                Success = success,
+                TransactionFee = fee,
+                Message = success ? "Settled successfully" : "Failed to settle"
+            };
+        }
+        catch (Exception ex)
         {
-            Success = success,
-            TransactionFee = fee,
-            Message = success ? "Settled successfully" : "Failed to settle"
-        };
+            return new SettleCustomerResponse
+            {
+                Success = false,
+                Message = $"An error occurred while settling: {ex.Message}"
+            };
+        }
     }
 }

@@ -10,7 +10,7 @@ public class PalindromeController : ControllerBase
     private readonly IPalindromeService _palindromeService;
     public PalindromeController(IPalindromeService palindromeService) => _palindromeService = palindromeService;
 
-    [HttpPost("check")]
+    [HttpPost("Palindrome")]
     public ActionResult<PalindromeResponse> CheckPalindrome([FromBody] PalindromeRequest request)
     {
         var isPalindrome = _palindromeService.IsPalindrome(request.statement, out var normalized);
