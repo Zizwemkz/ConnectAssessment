@@ -1,0 +1,38 @@
+name: .NET Build and Artifact
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish -c Release -o ./publish
+
+      # - name: Run NUnit tests
+      #   run: dotnet test --filter TestCategory=NUnit
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dotnet-api-publish
+          path: ./publish
