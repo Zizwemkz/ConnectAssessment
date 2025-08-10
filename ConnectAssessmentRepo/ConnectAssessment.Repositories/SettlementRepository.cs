@@ -12,10 +12,10 @@ namespace ConnectAssessment.Repositories
 {
     public class SettlementRepository : ISettlementRepository
     {
-        private readonly ConnectAssessmentDbContext _context;
+        private readonly ConnectAssessmentDbContext _Dbcontext;
         public SettlementRepository(ConnectAssessmentDbContext context)
         {
-            _context = context;
+            _Dbcontext = context;
         }
 
         public async Task<tbSettlementTransaction> GetByIdAsync(int id)
@@ -24,7 +24,7 @@ namespace ConnectAssessment.Repositories
                 throw new ArgumentException("Transaction ID must be a positive integer.", nameof(id));
             try
             {
-                var result = await _context.tbSettlementTransactions.FindAsync(id);
+                var result = await _Dbcontext.tbSettlementTransactions.FindAsync(id);
                 if (result == null)
                     throw new KeyNotFoundException($"Settlement transaction with ID {id} not found.");
                 return result;
@@ -40,7 +40,7 @@ namespace ConnectAssessment.Repositories
         {
             try
             {
-                return await _context.tbSettlementTransactions.ToListAsync();
+                return await _Dbcontext.tbSettlementTransactions.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -55,8 +55,8 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                await _context.tbSettlementTransactions.AddAsync(settlementTrans);
-                await _context.SaveChangesAsync();
+                await _Dbcontext.tbSettlementTransactions.AddAsync(settlementTrans);
+                await _Dbcontext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -71,8 +71,8 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                _context.tbSettlementTransactions.Update(settlementTrans);
-                await _context.SaveChangesAsync();
+                _Dbcontext.tbSettlementTransactions.Update(settlementTrans);
+                await _Dbcontext.SaveChangesAsync();
             }
             catch (DbUpdateException dbEx)
             {

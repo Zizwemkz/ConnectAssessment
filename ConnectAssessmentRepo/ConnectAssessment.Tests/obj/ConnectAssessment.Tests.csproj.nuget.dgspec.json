@@ -4,14 +4,84 @@
     "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj": {
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj",
-        "projectName": "ConnectAssessment.Tests",
-        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj",
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
+        "projectName": "ConnectAssessment.Common",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj",
         "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\obj\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BT-YDMXB836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+        "projectName": "ConnectAssessment.Data",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj",
+        "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,9 +121,276 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+        "projectName": "ConnectAssessment.Repositories",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj",
+        "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BT-YDMXB836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+        "projectName": "ConnectAssessment.Service",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj",
+        "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BT-YDMXB836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj",
+        "projectName": "ConnectAssessment.Tests",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\ConnectAssessment.Tests.csproj",
+        "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BT-YDMXB836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Data\\ConnectAssessment.Data.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\ConnectAssessment.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\ConnectAssessment.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.3, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.12.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "NUnit": {
               "target": "Package",
@@ -84,6 +421,109 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\ConnectAssessment.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\ConnectAssessment.csproj",
+        "projectName": "ConnectAssessment",
+        "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\ConnectAssessment.csproj",
+        "packagesPath": "C:\\Users\\BT-YDMXB836\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\BT-YDMXB836\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Common\\ConnectAssessment.Common.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Repositories\\ConnectAssessment.Repositories.csproj"
+              },
+              "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj": {
+                "projectPath": "C:\\Dev\\ConnectAssessment\\ConnectAssessmentRepo\\ConnectAssessment.Service\\ConnectAssessment.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

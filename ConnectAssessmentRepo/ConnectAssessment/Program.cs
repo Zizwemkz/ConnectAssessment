@@ -2,6 +2,7 @@ using ConnectAssessment.Common.Repository;
 using ConnectAssessment.Common.Service;
 using ConnectAssessment.Repositories;
 using ConnectAssessment.Service;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
@@ -21,7 +22,9 @@ builder.Services.AddHealthChecks()
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuring the HTTP request pipeline.
+builder.Services.AddDbContext<ConnectAssessment.Data.ConnectAssessmentDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 app.UseSwagger();
 app.UseSwaggerUI();

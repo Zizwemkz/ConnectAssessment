@@ -10,10 +10,10 @@ namespace ConnectAssessment.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly ConnectAssessmentDbContext _context;
+        private readonly ConnectAssessmentDbContext _Dbcontext;
         public CustomerRepository(ConnectAssessmentDbContext context)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context), "DbContext cannot be null.");
+            _Dbcontext = context ?? throw new ArgumentNullException(nameof(context), "DbContext cannot be null.");
         }
 
         public async Task<tbCustomer> GetByIdAsync(int id)
@@ -22,7 +22,7 @@ namespace ConnectAssessment.Repositories
                 throw new ArgumentException("Customer ID must be a positive integer.", nameof(id));
             try
             {
-                var result = await _context.tbCustomers.FindAsync(id);
+                var result = await _Dbcontext.tbCustomers.FindAsync(id);
                 if (result == null)
                     throw new KeyNotFoundException($"Customer with ID {id} not found.");
                 return result;
@@ -38,7 +38,7 @@ namespace ConnectAssessment.Repositories
         {
             try
             {
-                return await _context.tbCustomers.ToListAsync();
+                return await _Dbcontext.tbCustomers.ToListAsync();
             }
             catch (Exception ex)
             {
@@ -53,8 +53,8 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                await _context.tbCustomers.AddAsync(customer);
-                await _context.SaveChangesAsync();
+                await _Dbcontext.tbCustomers.AddAsync(customer);
+                await _Dbcontext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -69,8 +69,8 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                _context.tbCustomers.Update(customer);
-                await _context.SaveChangesAsync();
+                _Dbcontext.tbCustomers.Update(customer);
+                await _Dbcontext.SaveChangesAsync();
             }
             catch (DbUpdateException dbEx)
             {
