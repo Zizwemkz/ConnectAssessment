@@ -19,12 +19,12 @@ builder.Services.AddHealthChecks()
     .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), name: "sql")
     .AddCheck<CustomApiHealthCheck>("api_health");
 
-
-var app = builder.Build();
-
-// Configuring the HTTP request pipeline.
 builder.Services.AddDbContext<ConnectAssessment.Data.ConnectAssessmentDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+ var app = builder.Build();
+
+
 
 app.UseSwagger();
 app.UseSwaggerUI();

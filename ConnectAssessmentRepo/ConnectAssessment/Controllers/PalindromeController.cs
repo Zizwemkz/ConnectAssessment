@@ -14,6 +14,6 @@ public class PalindromeController : ControllerBase
     public ActionResult<PalindromeResponse> CheckPalindrome([FromBody] PalindromeRequest request)
     {
         var isPalindrome = _palindromeService.IsPalindrome(request.statement, out var normalized);
-        return Ok(new PalindromeResponse { IsPalindrome = isPalindrome, Normalized = normalized });
+        return Ok(new PalindromeResponse { IsPalindrome = isPalindrome, Normalized = normalized, statement = request .statement});
     }
 }

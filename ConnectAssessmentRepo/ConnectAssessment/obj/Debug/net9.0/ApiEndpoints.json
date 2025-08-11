@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "CustomerSettlementController",
+    "Method": "SettleCustomer",
+    "RelativePath": "api/CustomerSettlement/settle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ConnectAssessment.Data.Models.Requests.SettleCustomerRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ConnectAssessment.Data.Models.Responss.SettleCustomerResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PalindromeController",
+    "Method": "CheckPalindrome",
+    "RelativePath": "api/Palindrome/Palindrome",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ConnectAssessment.Data.Models.Requests.PalindromeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ConnectAssessment.Data.Models.Responss.PalindromeResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

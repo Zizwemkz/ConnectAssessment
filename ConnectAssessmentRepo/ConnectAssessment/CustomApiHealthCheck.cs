@@ -6,7 +6,7 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 public class CustomApiHealthCheck : IHealthCheck
 {
     private static readonly HttpClient _httpClient = new HttpClient();
-    private const string ApiUrl = "https://your-api-endpoint.com/health"; // Replace with your real endpoint
+    private const string ApiUrl = "https://your-api-endpoint.com/health";
 
     public async Task<HealthCheckResult> CheckHealthAsync(
         HealthCheckContext context,

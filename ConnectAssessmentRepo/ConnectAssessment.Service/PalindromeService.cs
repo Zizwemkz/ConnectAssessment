@@ -4,21 +4,25 @@ namespace ConnectAssessment.Service
 {
     public class PalindromeService : IPalindromeService
     {
-        public bool IsPalindrome(string input, out string normalized)
-        {
-            normalized = string.Empty;
+        private const string NullOrWhitespaceMessage = "Input cannot be null, empty, or whitespace.";
+        private const string PalindromeMessage = "is a palindrome";
+        private const string NotPalindromeMessage = "is not a palindrome";
 
+        public bool IsPalindrome(string statement, out string normalized)
+        {
             try
             {
-                if (string.IsNullOrWhiteSpace(input))
-                    throw new ArgumentException("Input cannot be null, empty, or whitespace.", nameof(input));
+                if (string.IsNullOrWhiteSpace(statement))
+                    throw new ArgumentException(NullOrWhitespaceMessage, nameof(statement));
 
-                normalized = new string(input
+                normalized = new string(statement
                     .Where(char.IsLetterOrDigit)
                     .Select(char.ToLower)
                     .ToArray());
 
-                return normalized.SequenceEqual(normalized.Reverse());
+                var isPalindrome = normalized.SequenceEqual(normalized.Reverse());
+                normalized = isPalindrome ? $"{normalized +" : "+ PalindromeMessage}" : $"{normalized +" : "+ NotPalindromeMessage}";
+                return isPalindrome;
             }
             catch (Exception ex)
             {
