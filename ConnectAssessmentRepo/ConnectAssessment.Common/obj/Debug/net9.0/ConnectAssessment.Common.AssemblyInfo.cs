@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectAssessment.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52b1e70b4e97bbd6aa37997b54300c20f305e5db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+540483d2d105277a96e31f798f54a7ec00f1b974")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectAssessment.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectAssessment.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

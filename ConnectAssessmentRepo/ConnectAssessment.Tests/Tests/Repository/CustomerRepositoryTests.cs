@@ -19,7 +19,7 @@ namespace ConnectAssessment.Tests.Repositories
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
                 .Options;
             _context = new ConnectAssessmentDbContext(options);
-            _repo = new CustomerRepository(_context);
+            _repo = new CustomerRepository(options);
         }
 
         [Test]
@@ -34,7 +34,7 @@ namespace ConnectAssessment.Tests.Repositories
             };
 
             await _repo.AddAsync(customer);
-            var dbCustomer = await _context.tbCustomers.FindAsync(customer.Id);
+            var dbCustomer = await _context.tbCustomers.FindAsync(customer.CustomerId);
 
             Assert.That(dbCustomer, Is.Not.Null);
             Assert.That(dbCustomer.Name, Is.EqualTo("John"));
@@ -116,7 +116,7 @@ namespace ConnectAssessment.Tests.Repositories
             await _context.tbCustomers.AddAsync(customer);
             await _context.SaveChangesAsync();
 
-            var result = await _repo.GetByIdAsync(customer.Id);
+            var result = await _repo.GetByIdAsync(customer.CustomerId);
             Assert.That(result, Is.Not.Null);
             Assert.That(result.Name, Is.EqualTo("Jane"));
         }
@@ -145,6 +145,7 @@ namespace ConnectAssessment.Tests.Repositories
                 AccountNumber = "ACC222",
                 Branch = "B"
             };
+
             await _context.tbCustomers.AddRangeAsync(c1, c2);
             await _context.SaveChangesAsync();
 
@@ -168,7 +169,7 @@ namespace ConnectAssessment.Tests.Repositories
             customer.Name = "Jamie";
             await _repo.UpdateAsync(customer);
 
-            var updated = await _context.tbCustomers.FindAsync(customer.Id);
+            var updated = await _context.tbCustomers.FindAsync(customer.CustomerId);
             Assert.That(updated.Name, Is.EqualTo("Jamie"));
         }
 

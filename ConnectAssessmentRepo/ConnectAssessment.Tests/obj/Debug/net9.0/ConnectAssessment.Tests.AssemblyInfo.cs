@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectAssessment.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3630ee927d4f631cd592c2f50cf02353c111ed6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+540483d2d105277a96e31f798f54a7ec00f1b974")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectAssessment.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectAssessment.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

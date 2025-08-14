@@ -73,7 +73,7 @@ namespace ConnectAssessment.Tests.Tests.Service
         public async Task SettleCustomerAsync_ReturnsFailure_WhenBankApiFails()
         {
             var req = new SettleCustomerRequest { CustomerId = 1, Amount = 100m };
-            var customer = new tbCustomer { Id = 1, AccountNumber = "ACC123" };
+            var customer = new tbCustomer { CustomerId = 1, AccountNumber = "ACC123" };
 
             _customerRepoMock.Setup(r => r.GetByIdAsync(req.CustomerId)).ReturnsAsync(customer);
             _feeServiceMock.Setup(f => f.CalculateFee(100m)).Returns(1.11m);
@@ -92,7 +92,7 @@ namespace ConnectAssessment.Tests.Tests.Service
         public async Task SettleCustomerAsync_ReturnsSuccess_WhenAllStepsPass()
         {
             var req = new SettleCustomerRequest { CustomerId = 1, Amount = 100m };
-            var customer = new tbCustomer { Id = 1, AccountNumber = "ACC123" };
+            var customer = new tbCustomer { CustomerId = 1, AccountNumber = "ACC123" };
 
             _customerRepoMock.Setup(r => r.GetByIdAsync(req.CustomerId)).ReturnsAsync(customer);
             _feeServiceMock.Setup(f => f.CalculateFee(100m)).Returns(1.11m);

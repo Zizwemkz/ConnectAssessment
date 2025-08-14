@@ -47,7 +47,7 @@ public class CustomerSettlementService : ICustomerSettlementService
 
             var settlement = new tbSettlementTransaction
             {
-                CustomerId = customer.Id,
+                CustomerId = customer.CustomerId,
                 Amount = request.Amount,
                 TransactionFee = fee,
                 Date = DateTime.UtcNow,

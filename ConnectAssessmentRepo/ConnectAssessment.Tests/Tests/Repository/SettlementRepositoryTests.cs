@@ -22,7 +22,7 @@ namespace ConnectAssessment.Tests.Repositories
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
                 .Options;
             _context = new ConnectAssessmentDbContext(options);
-            _repo = new SettlementRepository(_context);
+            _repo = new SettlementRepository(options);
         }
 
         [Test]

@@ -10,7 +10,7 @@ namespace ConnectAssessment.Data.Models.Entities
         public int Id { get; set; }
 
         [Required]
-        [ForeignKey("Customer")]
+        [ForeignKey("tbCustomer")]
         public int CustomerId { get; set; }
 
         [Required]
