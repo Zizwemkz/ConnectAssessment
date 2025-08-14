@@ -14,11 +14,9 @@ namespace ConnectAssessment.Data.Models.Entities
         public int CustomerId { get; set; }
 
         [Required]
-        [Range(0.01, double.MaxValue, ErrorMessage = "Amount must be greater than 0.")]
         public decimal Amount { get; set; }
 
         [Required]
-        [Range(0, double.MaxValue, ErrorMessage = "Transaction Fee cannot be negative.")]
         public decimal TransactionFee { get; set; }
 
         [Required]
@@ -27,7 +25,6 @@ namespace ConnectAssessment.Data.Models.Entities
         [Required]
         public bool Success { get; set; }
 
-        // Navigation property
         public tbCustomer Customer { get; set; }
     }
 }

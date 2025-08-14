@@ -22,7 +22,6 @@ namespace ConnectAssessment.Service
 
         public async Task<bool> TransferFundsAsync(string accountNumber, decimal amount)
         {
-            // Validation
             if (string.IsNullOrWhiteSpace(accountNumber))
                 throw new ArgumentException("Account number must not be empty.", nameof(accountNumber));
 

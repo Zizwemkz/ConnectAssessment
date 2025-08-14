@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using ConnectAssessment.Common.Repository;
 using ConnectAssessment.Data;
@@ -12,10 +10,10 @@ namespace ConnectAssessment.Repositories
 {
     public class SettlementRepository : ISettlementRepository
     {
-        private readonly ConnectAssessmentDbContext _Dbcontext;
-        public SettlementRepository(ConnectAssessmentDbContext context)
+        private readonly DbContextOptions<ConnectAssessmentDbContext> _options;
+        public SettlementRepository(DbContextOptions<ConnectAssessmentDbContext> options)
         {
-            _Dbcontext = context;
+            _options = options ?? throw new ArgumentNullException(nameof(options), "DbContextOptions cannot be null.");
         }
 
         public async Task<tbSettlementTransaction> GetByIdAsync(int id)
@@ -24,10 +22,13 @@ namespace ConnectAssessment.Repositories
                 throw new ArgumentException("Transaction ID must be a positive integer.", nameof(id));
             try
             {
-                var result = await _Dbcontext.tbSettlementTransactions.FindAsync(id);
-                if (result == null)
-                    throw new KeyNotFoundException($"Settlement transaction with ID {id} not found.");
-                return result;
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    var result = await context.tbSettlementTransactions.FindAsync(id);
+                    if (result == null)
+                        throw new KeyNotFoundException($"Settlement transaction with ID {id} not found.");
+                    return result;
+                }
             }
             catch (Exception ex)
             {
@@ -40,7 +41,10 @@ namespace ConnectAssessment.Repositories
         {
             try
             {
-                return await _Dbcontext.tbSettlementTransactions.ToListAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    return await context.tbSettlementTransactions.ToListAsync();
+                }
             }
             catch (Exception ex)
             {
@@ -55,8 +59,11 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                await _Dbcontext.tbSettlementTransactions.AddAsync(settlementTrans);
-                await _Dbcontext.SaveChangesAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    await context.tbSettlementTransactions.AddAsync(settlementTrans);
+                    await context.SaveChangesAsync();
+                }
             }
             catch (Exception ex)
             {
@@ -71,8 +78,11 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                _Dbcontext.tbSettlementTransactions.Update(settlementTrans);
-                await _Dbcontext.SaveChangesAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    context.tbSettlementTransactions.Update(settlementTrans);
+                    await context.SaveChangesAsync();
+                }
             }
             catch (DbUpdateException dbEx)
             {
@@ -100,6 +110,5 @@ namespace ConnectAssessment.Repositories
             if (trans.TransactionFee <= 0)
                 throw new ArgumentException("Transaction fee is required.", nameof(trans.TransactionFee));
         }
-
     }
 }

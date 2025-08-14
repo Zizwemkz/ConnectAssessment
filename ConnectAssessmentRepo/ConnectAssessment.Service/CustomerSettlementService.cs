@@ -25,7 +25,6 @@ public class CustomerSettlementService : ICustomerSettlementService
 
     public async Task<SettleCustomerResponse> SettleCustomerAsync(SettleCustomerRequest request)
     {
-        // Validation
         if (request == null)
             throw new ArgumentNullException(nameof(request), "Request cannot be null.");
 

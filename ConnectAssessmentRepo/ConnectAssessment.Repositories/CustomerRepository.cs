@@ -10,10 +10,10 @@ namespace ConnectAssessment.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly ConnectAssessmentDbContext _Dbcontext;
-        public CustomerRepository(ConnectAssessmentDbContext context)
+        private readonly DbContextOptions<ConnectAssessmentDbContext> _options;
+        public CustomerRepository(DbContextOptions<ConnectAssessmentDbContext> options)
         {
-            _Dbcontext = context ?? throw new ArgumentNullException(nameof(context), "DbContext cannot be null.");
+            _options = options ?? throw new ArgumentNullException(nameof(options), "DbContextOptions cannot be null.");
         }
 
         public async Task<tbCustomer> GetByIdAsync(int id)
@@ -22,10 +22,13 @@ namespace ConnectAssessment.Repositories
                 throw new ArgumentException("Customer ID must be a positive integer.", nameof(id));
             try
             {
-                var result = await _Dbcontext.tbCustomers.FindAsync(id);
-                if (result == null)
-                    throw new KeyNotFoundException($"Customer with ID {id} not found.");
-                return result;
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    var result = await context.tbCustomers.FindAsync(id);
+                    if (result == null)
+                        throw new KeyNotFoundException($"Customer with ID {id} not found.");
+                    return result;
+                }
             }
             catch (Exception ex)
             {
@@ -38,7 +41,10 @@ namespace ConnectAssessment.Repositories
         {
             try
             {
-                return await _Dbcontext.tbCustomers.ToListAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    return await context.tbCustomers.ToListAsync();
+                }
             }
             catch (Exception ex)
             {
@@ -53,8 +59,11 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                await _Dbcontext.tbCustomers.AddAsync(customer);
-                await _Dbcontext.SaveChangesAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    await context.tbCustomers.AddAsync(customer);
+                    await context.SaveChangesAsync();
+                }
             }
             catch (Exception ex)
             {
@@ -69,8 +78,11 @@ namespace ConnectAssessment.Repositories
 
             try
             {
-                _Dbcontext.tbCustomers.Update(customer);
-                await _Dbcontext.SaveChangesAsync();
+                using (var context = new ConnectAssessmentDbContext(_options))
+                {
+                    context.tbCustomers.Update(customer);
+                    await context.SaveChangesAsync();
+                }
             }
             catch (DbUpdateException dbEx)
             {
