@@ -104,7 +104,7 @@ dotnet test
 
 ## Design
 ## High Level Architecture Diagrme can be found here: 
-![Design diagrame](./design/connectAss1.png)</a>
+![Design diagrame](./design/connectAss2.png)</a>
 
 ## Class Diagrame:
-![Design diagrame](./design/connectass2.png)</a>
+![Design diagrame](./design/connectass1.png)</a>
