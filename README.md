@@ -101,3 +101,10 @@ Navigate to the `Tests` directory and run:
 ```bash
 dotnet test
 ```
+
+## Design
+## High Level Architecture Diagrme can be found here: 
+![Design diagrame](./design/connectAss1.png)</a>
+
+## Class Diagrame:
+![Design diagrame](./design/connectass2.png)</a>
