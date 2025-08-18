@@ -105,6 +105,8 @@ namespace ConnectAssessment.Repositories
                 throw new ArgumentException("Customer name is required.", nameof(customer.Name));
             if (string.IsNullOrWhiteSpace(customer.SurName))
                 throw new ArgumentException("Customer name is required.", nameof(customer.SurName));
+            if (string.IsNullOrWhiteSpace(customer.CompanyName))
+                throw new ArgumentException("Company name is required.", nameof(customer.CompanyName));
             if (string.IsNullOrWhiteSpace(customer.AccountNumber))
                 throw new ArgumentException("Customer AccountNumber is required.", nameof(customer.AccountNumber));
             if (string.IsNullOrWhiteSpace(customer.Branch))

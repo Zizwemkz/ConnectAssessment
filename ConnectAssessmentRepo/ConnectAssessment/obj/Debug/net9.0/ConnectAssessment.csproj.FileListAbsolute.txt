@@ -271,10 +271,10 @@ C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ConnectAssessment.props
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ConnectAssessment.props
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\ConnectA.3FFCA506.Up2Date
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\ConnectAssessment.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\refint\ConnectAssessment.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\ConnectAssessment.pdb
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\ConnectAssessment.genruntimeconfig.cache
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\ref\ConnectAssessment.dll
+C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

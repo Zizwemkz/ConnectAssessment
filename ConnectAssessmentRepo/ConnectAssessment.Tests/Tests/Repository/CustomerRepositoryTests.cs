@@ -29,6 +29,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "John",
                 SurName = "Doe",
+                CompanyName = "Test Company",
                 AccountNumber = "ACC123",
                 Branch = "Main"
             };
@@ -82,6 +83,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "John",
                 SurName = "Doe",
+                CompanyName = "Test Company",
                 AccountNumber = "",
                 Branch = "Main"
             };
@@ -96,6 +98,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "John",
                 SurName = "Doe",
+                CompanyName = "Test Company",
                 AccountNumber = "ACC123",
                 Branch = ""
             };
@@ -110,6 +113,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "Jane",
                 SurName = "Smith",
+                CompanyName = "Example Corp",
                 AccountNumber = "ACC999",
                 Branch = "West"
             };
@@ -135,6 +139,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "Alice",
                 SurName = "Wonder",
+                CompanyName = "Wonderland Inc.",
                 AccountNumber = "ACC111",
                 Branch = "A"
             };
@@ -142,6 +147,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "Bob",
                 SurName = "Builder",
+                CompanyName = "Wonderland Group.",
                 AccountNumber = "ACC222",
                 Branch = "B"
             };
@@ -160,6 +166,7 @@ namespace ConnectAssessment.Tests.Repositories
             {
                 Name = "James",
                 SurName = "Brown",
+                CompanyName = "Tech Corp",
                 AccountNumber = "ACC555",
                 Branch = "HQ"
             };

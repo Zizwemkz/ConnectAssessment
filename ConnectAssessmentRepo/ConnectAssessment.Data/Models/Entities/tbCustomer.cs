@@ -16,6 +16,9 @@ namespace ConnectAssessment.Data.Models.Entities
         public string SurName { get; set; }
 
         [Required]
+        public string CompanyName { get; set; }
+
+        [Required]
         public string AccountNumber { get; set; }
 
         public string Branch { get; set; }
