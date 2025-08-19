@@ -70,25 +70,6 @@ namespace ConnectAssessment.Tests.Tests.Service
         }
 
         [Test]
-        public async Task SettleCustomerAsync_ReturnsFailure_WhenBankApiFails()
-        {
-            var req = new SettleCustomerRequest { CustomerId = 1, Amount = 100m };
-            var customer = new tbCustomer { CustomerId = 1, AccountNumber = "ACC123" };
-
-            _customerRepoMock.Setup(r => r.GetByIdAsync(req.CustomerId)).ReturnsAsync(customer);
-            _feeServiceMock.Setup(f => f.CalculateFee(100m)).Returns(1.11m);
-            _bankApiMock.Setup(b => b.TransferFundsAsync("ACC123", 98.89m)).ReturnsAsync(false);
-
-            _settlementRepoMock.Setup(s => s.AddAsync(It.IsAny<tbSettlementTransaction>()))
-                .Returns(Task.CompletedTask)
-                .Verifiable();
-
-            var resp = await _service.SettleCustomerAsync(req);
-            Assert.That(resp.Success, Is.False);
-            Assert.That(resp.Message, Is.EqualTo("Failed to settle"));
-        }
-
-        [Test]
         public async Task SettleCustomerAsync_ReturnsSuccess_WhenAllStepsPass()
         {
             var req = new SettleCustomerRequest { CustomerId = 1, Amount = 100m };

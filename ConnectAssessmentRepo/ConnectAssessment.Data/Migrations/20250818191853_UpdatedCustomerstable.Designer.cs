@@ -4,6 +4,7 @@ using ConnectAssessment.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConnectAssessment.Data.Migrations
 {
     [DbContext(typeof(ConnectAssessmentDbContext))]
-    partial class ConnectAssessmentDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250818191853_UpdatedCustomerstable")]
+    partial class UpdatedCustomerstable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

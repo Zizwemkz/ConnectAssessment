@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectAssessment.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+664a1fd02e43970354a190cf71e37e427ef8f29b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5897768484eb1a5cf8f1307a81730282c16856e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectAssessment.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectAssessment.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

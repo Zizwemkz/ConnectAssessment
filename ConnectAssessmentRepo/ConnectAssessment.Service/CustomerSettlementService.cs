@@ -44,7 +44,7 @@ public class CustomerSettlementService : ICustomerSettlementService
             var toTransfer = request.Amount - fee;
 
             //provided endpoint for bank not yet working will assume it is workingand returns true
-            var success = true;//await _bankApi.TransferFundsAsync(customer.AccountNumber, toTransfer);
+            var success = true; //await _bankApi.TransferFundsAsync(customer.AccountNumber, toTransfer);
 
             var settlement = new tbSettlementTransaction
             {
