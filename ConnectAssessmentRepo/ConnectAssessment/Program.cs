@@ -24,9 +24,7 @@ builder.Services.AddCors(options =>
         policy =>
         {
             policy.WithOrigins(
-                "http://localhost:3000",   // React dev server
-                "http://localhost",        // Docker frontend (nginx default on port 80)
-                "http://127.0.0.1:3000")    // sometimes React dev runs here) // frontend URL
+                "http://localhost:3001")  // React dev server
                   .AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowCredentials();
@@ -44,12 +42,7 @@ builder.Services.AddDbContext<ConnectAssessment.Data.ConnectAssessmentDbContext>
 
 var app = builder.Build();
 
-app.UseCors("AllowFrontend");
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseCors("AllowReactApp");
 
 app.UseHttpsRedirection();
 
