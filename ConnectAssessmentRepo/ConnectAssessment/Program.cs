@@ -2,6 +2,7 @@ using ConnectAssessment.Common.Repository;
 using ConnectAssessment.Common.Service;
 using ConnectAssessment.Repositories;
 using ConnectAssessment.Service;
+using ConnectAssessment.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +15,24 @@ builder.Services.AddScoped<ITransactionFeeService, TransactionFeeService>();
 builder.Services.AddScoped<IBankApiService, BankApiService>();
 builder.Services.AddHttpClient<IBankApiService, BankApiService>();
 
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerService, CustomerService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReactApp",
+        policy =>
+        {
+            policy.WithOrigins(
+                "http://localhost:3000",   // React dev server
+                "http://localhost",        // Docker frontend (nginx default on port 80)
+                "http://127.0.0.1:3000")    // sometimes React dev runs here) // frontend URL
+                  .AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowCredentials();
+        });
+});
+
 builder.Services.AddSwaggerGen();
 builder.Services.AddHealthChecks()
     .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), name: "sql")
@@ -22,17 +41,33 @@ builder.Services.AddHealthChecks()
 builder.Services.AddDbContext<ConnectAssessment.Data.ConnectAssessmentDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
- var app = builder.Build();
 
+var app = builder.Build();
 
+app.UseCors("AllowFrontend");
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
 
 app.UseSwagger();
 app.UseSwaggerUI();
 app.MapHealthChecks("/health");
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Method == "OPTIONS")
+    {
+        context.Response.StatusCode = 200;
+        return;
+    }
+    await next();
+});
 
+app.MapControllers();
 app.Run();
