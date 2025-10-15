@@ -1,26 +1,39 @@
-# Use official ASP.NET runtime image for .NET 6
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+# Use official ASP.NET runtime for .NET 9
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
 # Build stage
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
-# Copy csproj and restore as distinct layers
-COPY ["ConnectAssessment.csproj", "./"]
-RUN dotnet restore "./ConnectAssessment.csproj"
+# Copy solution and project files first (to leverage Docker layer caching)
+COPY ConnectAssessmentRepo/ ./src
+# COPY ConnectAssessmentRepo/ConnectAssessment/*.csproj ConnectAssessment/
+# COPY ConnectAssessmentRepo/ConnectAssessment.Common/*.csproj ConnectAssessment.Common/
+# COPY ConnectAssessmentRepo/ConnectAssessment.Data/*.csproj ConnectAssessment.Data/
+# COPY ConnectAssessmentRepo/ConnectAssessment.Repositories/*.csproj ConnectAssessment.Repositories/
+# COPY ConnectAssessmentRepo/ConnectAssessment.Service/*.csproj ConnectAssessment.Service/
+# COPY ConnectAssessmentRepo/ConnectAssessment.Tests/*.csproj ConnectAssessment.Tests/
+# COPY ConnectAssessmentRepo/ConnectAssessment.sln ./
 
-# Copy everything else and build
-COPY . .
-RUN dotnet build "./ConnectAssessment.csproj" -c Release -o /app/build
+# Restore dependencies
+RUN dotnet restore ./src/ConnectAssessmentRepo/ConnectAssessment/ConnectAssessment.sln
+
+# Copy the rest of the source
+COPY ConnectAssessmentRepo/ ./
+
+# Build the main app
+WORKDIR /src/ConnectAssessment
+RUN dotnet build -c Release -o /app/build
 
 # Publish stage
 FROM build AS publish
-RUN dotnet publish "./ConnectAssessment.csproj" -c Release -o /app/publish /p:UseAppHost=false
+WORKDIR /src/ConnectAssessment
+RUN dotnet publish -c Release -o /app/publish /p:UseAppHost=false
 
-# Final stage
+# Runtime stage
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .

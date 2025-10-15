@@ -16,6 +16,10 @@ C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\refint\C
 C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.pdb
 C:\Dev\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ref\ConnectAssessment.Service.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Service.deps.json
+C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.AssemblyInfoInputs.cache
+C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.AssemblyInfo.cs
+C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectA.1F6CA04E.Up2Date
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Service.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Service.pdb
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Common.dll
@@ -23,12 +27,8 @@ C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Deb
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Common.pdb
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\bin\Debug\net9.0\ConnectAssessment.Data.pdb
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.csproj.AssemblyReference.cache
-C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.AssemblyInfoInputs.cache
-C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.AssemblyInfo.cs
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.csproj.CoreCompileInputs.cache
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.sourcelink.json
-C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectA.1F6CA04E.Up2Date
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\refint\ConnectAssessment.Service.dll
 C:\Dev\ConnectAssessment\ConnectAssessmentRepo\ConnectAssessment.Service\obj\Debug\net9.0\ConnectAssessment.Service.pdb

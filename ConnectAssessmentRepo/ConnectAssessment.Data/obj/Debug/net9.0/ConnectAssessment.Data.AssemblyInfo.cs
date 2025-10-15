@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConnectAssessment.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5897768484eb1a5cf8f1307a81730282c16856e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97306b881ebee47551622ab8f8b22c99f63d11ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConnectAssessment.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConnectAssessment.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

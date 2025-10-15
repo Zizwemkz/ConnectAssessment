@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using ConnectAssessment.Common.Service;
 using ConnectAssessment.Data.Models.Responss;
 using ConnectAssessment.Data.Models.Requests;
+using ConnectAssessment.Data.Models.Entities;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -16,5 +17,5 @@ public class CustomerSettlementController : ControllerBase
     {
         var result = await _settlementService.SettleCustomerAsync(request);
         return Ok(result);
-    }
+    }   
 }
