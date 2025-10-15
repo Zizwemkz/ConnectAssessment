@@ -1,4 +1,4 @@
-name: .NET Build and Artifact
+name: .NET Build, Test & Mutation Analysis
 
 on:
   push:
@@ -25,13 +25,28 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
 
-      - name: Publish
-        run: dotnet publish -c Release -o ./publish
+      - name: Run Unit Tests
+        run: dotnet test --configuration Release --no-build --collect:"XPlat Code Coverage"
 
-      # - name: Run NUnit tests
-      #   run: dotnet test --filter TestCategory=NUnit
+      - name: Install Stryker tool
+        run: |
+          dotnet new tool-manifest
+          dotnet tool install dotnet-stryker
+          dotnet tool restore
 
-      - name: Upload build artifact
+      - name: Run Stryker Mutation Tests
+        run: |
+          dotnet stryker --reporters "html" --break-at 60
+
+      - name: Upload Stryker report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: stryker-mutation-report
+          path: |
+            **/StrykerOutput/**/*.html
+            **/StrykerOutput/**/*.json
+
+      - name: Publish Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-api-publish
