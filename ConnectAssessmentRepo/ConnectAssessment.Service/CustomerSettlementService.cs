@@ -1,4 +1,5 @@
-﻿using ConnectAssessment.Common.Repository;
+﻿using Azure.Core;
+using ConnectAssessment.Common.Repository;
 using ConnectAssessment.Common.Service;
 using ConnectAssessment.Data.Models.Entities;
 using ConnectAssessment.Data.Models.Requests;
@@ -25,15 +26,7 @@ public class CustomerSettlementService : ICustomerSettlementService
 
     public async Task<SettleCustomerResponse> SettleCustomerAsync(SettleCustomerRequest request)
     {
-        if (request == null)
-            throw new ArgumentNullException(nameof(request), "Request cannot be null.");
-
-        if (request.CustomerId <= 0)
-            return new SettleCustomerResponse { Success = false, Message = "Invalid customer ID." };
-
-        if (request.Amount <= 0)
-            return new SettleCustomerResponse { Success = false, Message = "Amount must be greater than zero." };
-
+        Validator(request);
         try
         {
             var customer = await _customerRepo.GetByIdAsync(request.CustomerId);
@@ -71,5 +64,17 @@ public class CustomerSettlementService : ICustomerSettlementService
                 Message = $"An error occurred while settling: {ex.Message}"
             };
         }
+    }
+
+    private void Validator(SettleCustomerRequest request)
+    {
+        if (request == null)
+            throw new ArgumentNullException(nameof(request), "Request cannot be null.");
+
+        if (request.CustomerId <= 0)
+            throw new ArgumentNullException (nameof(request), "Invalid customer ID." );
+
+        if (request.Amount <= 0)
+            throw new ArgumentNullException (nameof(request), "Amount must be greater than zero." );
     }
 }
